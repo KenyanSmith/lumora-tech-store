@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#131921" />
+  <meta name="description" content="LUMORA TECH — useful phone accessories and everyday tech." />
+  <title>LUMORA TECH — Upgrade Your Everyday</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="top-strip">⚡ LUMORA TECH · Smart tech for everyday life · Secure checkout</div>
+
+  <header class="main-nav">
+    <a class="brand" href="#" aria-label="LUMORA TECH home">
+      <span class="brand-mark">L</span>
+      <span class="brand-word">LUMORA<span>TECH</span></span>
+    </a>
+
+    <button class="location-pill" type="button" aria-label="Delivery location">
+      <span class="pin">⌖</span><span><small>Deliver to</small><b>United States</b></span>
+    </button>
+
+    <div class="search-wrap">
+      <select id="categorySelect" aria-label="Search category">
+        <option value="all">All</option>
+        <option value="creator">Creator Gear</option>
+        <option value="power">Power</option>
+        <option value="lighting">Lighting</option>
+        <option value="audio">Audio</option>
+      </select>
+      <input id="searchInput" type="search" placeholder="Search LUMORA TECH" aria-label="Search products" />
+      <button id="searchBtn" type="button" aria-label="Search">⌕</button>
+    </div>
+
+    <a class="nav-account" href="#faq"><small>Hello, tech lover</small><b>Account & Help ▾</b></a>
+    <a class="nav-orders" href="#shop"><small>Explore</small><b>Deals & new tech</b></a>
+    <button class="cart-button" id="cartBtn" aria-label="Open cart"><span>🛒</span> Cart <strong id="cartCount">0</strong></button>
+  </header>
+
+  <nav class="category-bar" aria-label="Product categories">
+    <a href="#shop">☰ <b>All</b></a>
+    <a href="#shop" data-filter="creator">Creator Gear</a>
+    <a href="#shop" data-filter="power">Power</a>
+    <a href="#shop" data-filter="lighting">Lighting</a>
+    <a href="#shop" data-filter="audio">Audio</a>
+    <a href="#why">Why LUMORA</a>
+    <a href="#faq">Help & FAQ</a>
+  </nav>
+
+  <main>
+    <section class="hero-market">
+      <div class="hero-copy">
+        <div class="deal-label">LUMORA TECH · FEATURED DEAL</div>
+        <h1>Upgrade your <span>everyday.</span></h1>
+        <p>Smart, compact tech for your phone, desk, car, travel bag, and creator setup.</p>
+        <div class="hero-buttons">
+          <a class="shop-btn" href="#shop">Shop featured tech</a>
+          <a class="text-btn" href="#why">Why LUMORA →</a>
+        </div>
+        <div class="hero-benefits"><span>✓ Secure checkout</span><span>✓ Order tracking</span><span>✓ No subscriptions</span></div>
+      </div>
+      <div class="hero-product">
+        <div class="hero-badge">BEST SELLER</div>
+        <div class="device-stage">
+          <div class="device-phone"><div class="device-camera"></div><div class="device-screen-text">CREATOR<br>MODE</div></div>
+          <div class="device-stick"></div><div class="device-base"></div>
+          <div class="remote">●</div>
+        </div>
+        <div class="hero-product-info"><div><b>CreatorStick™</b><span>4-in-1 magnetic setup</span></div><strong>$29.99</strong></div>
+      </div>
+    </section>
+
+    <section class="trust-row" aria-label="Shopping highlights">
+      <div><b>Secure checkout</b><span>Powered by Stripe</span></div>
+      <div><b>CreatorStick™ available now</b><span>Featured LUMORA product</span></div>
+      <div><b>Simple returns</b><span>Policy published before live launch</span></div>
+    </section>
+
+    <section class="quick-cats" aria-label="Shop categories">
+      <a href="#shop" data-filter="creator"><span>✦</span><b>Creator Gear</b><small>Tripods & mounts</small></a>
+      <a href="#shop" data-filter="power"><span>⚡</span><b>Power</b><small>Charge on the go</small></a>
+      <a href="#shop" data-filter="lighting"><span>☼</span><b>Lighting</b><small>Look better on camera</small></a>
+      <a href="#shop" data-filter="audio"><span>◉</span><b>Audio</b><small>Cleaner sound</small></a>
+    </section>
+
+    <section class="market-section" id="shop">
+      <div class="section-head">
+        <div><div class="kicker">FEATURED PRODUCTS</div><h2>Popular tech picks</h2></div>
+        <span id="resultCount" class="result-count">4 products</span>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div id="noResults" class="no-results" hidden>No products matched your search. Try another term.</div>
+    </section>
+
+    <section class="deal-banner">
+      <div><span class="deal-label">FEATURED</span><h2>One gadget. Four jobs.</h2><p>CreatorStick™ switches from handheld selfie stick to tabletop tripod, magnetic mount, and Bluetooth remote setup.</p></div>
+      <div class="deal-price"><small>Featured price</small><strong>$29.99</strong><button class="shop-btn add-featured" data-product-id="creatorstick">Buy now</button></div>
+    </section>
+
+    <section class="market-section why" id="why">
+      <div class="section-head"><div><div class="kicker">THE LUMORA STANDARD</div><h2>Tech without the clutter.</h2></div></div>
+      <div class="why-grid">
+        <article><span>01</span><h3>Useful by design</h3><p>We focus on accessories that solve everyday phone and creator problems.</p></article>
+        <article><span>02</span><h3>Easy to carry</h3><p>Compact gear that earns its spot in your pocket, bag, car, or desk.</p></article>
+        <article><span>03</span><h3>Simple shopping</h3><p>Clear pricing, straightforward product info, and secure checkout.</p></article>
+      </div>
+    </section>
+
+    <section class="market-section faq" id="faq">
+      <div class="section-head"><div><div class="kicker">CUSTOMER HELP</div><h2>Questions? We got you.</h2></div></div>
+      <details><summary>Will CreatorStick™ work with my phone?</summary><p>It is designed for MagSafe-compatible phones and cases. Non-magnetic phones can use a compatible magnetic ring or case.</p></details>
+      <details><summary>How long does shipping take?</summary><p>Our current supplier test for the selected U.S. route shows an estimated 4–7 days in transit after processing. Estimates can vary and are not guarantees.</p></details>
+      <details><summary>What is the return policy?</summary><p>Our final return policy will be published before live launch. Please review the policy shown at checkout before ordering.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark">L</span><div><b>LUMORA TECH</b><small>Upgrade your everyday.</small></div></div>
+    <div class="footer-links"><a href="#shop">Shop</a><a href="#why">About</a><a href="#faq">Shipping & Returns</a><a href="#faq">Support</a></div>
+    <small>© 2026 LUMORA TECH · Storefront in setup</small>
+  </footer>
+
+  <div class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <aside class="cart-panel">
+      <div class="cart-header"><h2>Your cart</h2><button id="closeCart" aria-label="Close cart">✕</button></div>
+      <div id="cartItems" class="cart-items"></div><div class="cart-empty" id="cartEmpty">Your cart is empty.</div>
+      <div class="cart-summary"><div><span>Subtotal</span><b id="subtotal">$0.00</b></div><p>Shipping and taxes calculated at checkout.</p><button class="shop-btn" id="checkoutBtn">Checkout</button></div>
+    </aside>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
