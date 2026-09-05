@@ -1,4 +1,4 @@
-const STRIPE_CREATORSTICK_URL = "https://buy.stripe.com/cNi3cu6f43me7Pu4hTgA800";
+const STRIPE_CREATORSTICK_URL = "https://buy.stripe.com/4gM7sK7j8cWOfhW6q1gA801";
 const products = [
   {id:'creatorstick',name:'CreatorStick™',price:29.99,tag:'BEST SELLER',category:'creator',rating:'★★★★★',description:'Portable 4-in-1 magnetic selfie stick that transforms into a tripod. Compact, adjustable, and made for photos, videos, livestreams, and everyday content.'},
   {id:'snapcharge',name:'SnapCharge™',price:34.99,tag:'COMING SOON',category:'power',rating:'',description:'Magnetic portable power concept for compatible phones and everyday carry.'},
